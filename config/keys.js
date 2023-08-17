@@ -1,4 +1,6 @@
-dbPassword = "mongodb://127.0.0.1:27017/passport";
+require("dotenv").config();
+
+dbPassword = process.env.DB_URL;
 
 module.exports = {
   mongoURI: dbPassword,
